@@ -1,3 +1,4 @@
+export Control
 
 mutable struct Control
     u::Float64

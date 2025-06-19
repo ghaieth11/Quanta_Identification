@@ -11,7 +11,7 @@ mutable struct Qubit
     gamma2::Float64
 end
 
-# Constructor from values (déjà généré automatiquement par Julia)
+
 
 
 # Constructor from another Qubit

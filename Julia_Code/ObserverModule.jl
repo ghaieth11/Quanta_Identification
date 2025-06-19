@@ -8,7 +8,7 @@ include("QubitModule.jl")
 include("SystemModule.jl")
 include("UtilsModule.jl")
 
-export Observer, measure, get_obs, set_obs
+export Observer
 
 mutable struct Observer
     obs::Matrix{ComplexF64}

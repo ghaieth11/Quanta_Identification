@@ -1,11 +1,9 @@
-module UtilsModule
-
 using LinearAlgebra
 using Random
 using DifferentialEquations
 using Statistics
 
-export sx, sy, sz, E1
+export sx, sy, sz, E1, EliminationAlgorithmKappa, EliminationAlgorithmOmega2
 
 # Définition des matrices de Pauli
 const sx = [0.0 1.0; 1.0 0.0]
@@ -96,7 +94,7 @@ function EliminationAlgorithmKappa(kappa_list::Vector{Float64}, n::Int, t1::Floa
 
         results = Float64[]
         for κ in kappa_list
-            new_params = copy(parameters)
+            new_params = Base.copy(parameters)
             new_params[3] = κ  # param[3] == κ
             push!(results, QubitSimulation(new_params, v0, t_new, n))
         end
@@ -129,7 +127,7 @@ function EliminationAlgorithmOmega2(omega_list::Vector{Float64}, n::Int, t1::Flo
 
         results = Float64[]
         for ω in omega_list
-            new_params = copy(parameters)
+            new_params = Base.copy(parameters)
             new_params[1] = ω  # param[1] == ω
             push!(results, simulate_measurement(new_params, v0, t_new, n))
         end
@@ -152,5 +150,3 @@ function EliminationAlgorithmOmega2(omega_list::Vector{Float64}, n::Int, t1::Flo
         return nothing
     end
 end
-
-end 
