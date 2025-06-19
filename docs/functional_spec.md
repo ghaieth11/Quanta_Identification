@@ -33,15 +33,6 @@ This system aims to estimate unknown physical parameters of a quantum two-level 
 
 ------------------------------------------------------------------------
 
-## 3. User Roles
-
-| Role       | Responsibilities                                                |
-|------------|-----------------------------------------------------------------|
-| Researcher | Runs simulations, analyzes outputs, refines qubit modeling      |
-| Developer  | Maintains codebase, adds features, ensures scientific integrity |
-
-------------------------------------------------------------------------
-
 ## 4. Workflow / System Behavior
 
 ### Step-by-step usage:
