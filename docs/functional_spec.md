@@ -178,11 +178,3 @@ $$
 | `n`       | Number of measurement samples | 1000+ recommended     |
 
 ------------------------------------------------------------------------
-
-## 10. Assumptions & Limitations
-
--   Assumes Markovian dynamics and weak coupling
--   Measurement noise is only statistical (not hardware/noise-specific)
--   Estimation relies on repeatability and large `n`
-
-------------------------------------------------------------------------
