@@ -1,6 +1,6 @@
 # Functional Specification Document
 
-**Project:** Qubit Parameter Estimation System\
+**Project:** Qubit Parameter Identification\
 **Author:** *ALOUI Ghaieth*\
 **Date:** 2025-05-28\
 **Version:** 1.0
