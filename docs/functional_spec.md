@@ -18,7 +18,7 @@ This system aims to estimate unknown physical parameters of a quantum two-level 
 
 ------------------------------------------------------------------------
 
-##2. Functional Overview
+## 2. Functional Overview
 
 ### Key Functional Goals:
 
@@ -33,7 +33,7 @@ This system aims to estimate unknown physical parameters of a quantum two-level 
 
 ------------------------------------------------------------------------
 
-## 4. Workflow / System Behavior
+## 3. Workflow / System Behavior
 
 ### Step-by-step usage:
 
@@ -52,9 +52,9 @@ This system aims to estimate unknown physical parameters of a quantum two-level 
 
 ------------------------------------------------------------------------
 
-## 5. Functional Requirements
+## 4. Functional Requirements
 
-### 5.1 Qubit Management
+### 4.1 Qubit Management
 
 | Function         | Description                                     |
 |------------------|-------------------------------------------------|
@@ -65,7 +65,7 @@ This system aims to estimate unknown physical parameters of a quantum two-level 
 
 ------------------------------------------------------------------------
 
-### 5.2 Control Management
+### 4.2 Control Management
 
 | Function   | Description                    |
 |------------|--------------------------------|
@@ -74,7 +74,7 @@ This system aims to estimate unknown physical parameters of a quantum two-level 
 
 ------------------------------------------------------------------------
 
-### 5.3 System Dynamics
+### 4.3 System Dynamics
 
 | Function            | Description                                                          |
 |---------------------|----------------------------------------------------------------------|
@@ -84,7 +84,7 @@ This system aims to estimate unknown physical parameters of a quantum two-level 
 
 ------------------------------------------------------------------------
 
-### 5.4 Observation
+### 4.4 Observation
 
 | Function    | Description                                                        |
 |-------------|--------------------------------------------------------------------|
@@ -92,7 +92,7 @@ This system aims to estimate unknown physical parameters of a quantum two-level 
 
 ------------------------------------------------------------------------
 
-### 5.5 Estimation
+### 4.5 Estimation
 
 | Method              | Parameter Estimated | Logic Description                                |
 |---------------------|---------------------|--------------------------------------------------|
@@ -103,7 +103,7 @@ This system aims to estimate unknown physical parameters of a quantum two-level 
 
 ------------------------------------------------------------------------
 
-## 🔍 6. Simulation Behavior
+##  5. Simulation Behavior
 
 The quantum state is represented by a **Bloch vector** $v = (x, y, z)$ and evolves according to:
 
@@ -120,7 +120,7 @@ The solution is computed numerically via `scipy.integrate.solve_ivp`.
 
 ------------------------------------------------------------------------
 
-## 🎲 7. Measurement Simulation
+##  6. Measurement Simulation
 
 The quantum density matrix is:
 
@@ -142,7 +142,7 @@ $$
 
 ------------------------------------------------------------------------
 
-## 8. Estimation via Elimination Algorithms
+## 7. Estimation via Elimination Algorithms
 
 **Why needed:** Ambiguity in inverse trigonometric functions during estimation (due to ±θ + 2kπ).
 
@@ -156,7 +156,7 @@ $$
 
 ------------------------------------------------------------------------
 
-##️ 9. Configuration Parameters
+# 8. Configuration Parameters
 
 | Parameter | Description                   | Default Range         |
 |-----------|-------------------------------|-----------------------|
